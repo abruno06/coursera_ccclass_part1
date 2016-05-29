@@ -1,0 +1,458 @@
+sudo telnet localhost 2181
+telnet localhost 2181
+sudo apt-get install zookeeperd
+telnet localhost 2181
+sudo service zookeeper start
+sudo service zookeeper restart 
+telnet localhost 2181
+sudo vi /etc/zookeeper/conf/configuration.xsl 
+sudo vi /etc/zookeeper/conf/zoo.cfg 
+ls /var/lib/
+ls /var/lib/z*
+ls /var/lib/zookeeper/myid
+ls /var/lib/zookeeper/
+ls /var/lib/zookeeper/version-2/log.1 
+tail -f /var/lib/zookeeper/version-2/log.1 
+ls
+sudo vi /etc/zookeeper/conf/zoo.cfg 
+netstat -an | grep 2181
+telnet ip6-localhost
+telnet ip6-localhost 2181
+vi .profile 
+source .profile 
+sudo sh
+ls
+mkdir -p ~/Downloads
+cd Downloads/
+wget http://wwwftp.ciril.fr/pub/apache/kafka/0.9.0.0/kafka_2.11-0.9.0.0.tgz
+cd ..
+mkdir -p ~/kafka && cd ~/kafka
+ls
+tar -xvzf ~/Downloads/kafka.tgz --strip 1
+tar -xvzf ~/Downloads/kafka_2.11-0.9.0.0.tgz  --strip 1
+ls
+vi ~/kafka/config/server.properties
+nohup ~/kafka/bin/kafka-server-start.sh ~/kafka/config/server.properties > ~/kafka/kafka.log 2>&1 &
+ls
+cd logs/
+ls
+cd ..
+ls
+tail -f kafka.log 
+more kafka.log 
+vi ~/kafka/config/server.properties
+sudo vi /etc/zookeeper/conf/zoo.cfg 
+sudo service zookeeper restart 
+nohup ~/kafka/bin/kafka-server-start.sh ~/kafka/config/server.properties > ~/kafka/kafka.log 2>&1 &
+tail -f kafka.log 
+nc localhost 2181
+echo ruok | nc localhost 2181
+ls
+cd config/
+ls
+more zookeeper.properties 
+vi ~/kafka/config/server.properties
+sudo vi /etc/zookeeper/conf/zoo.cfg 
+sudo service zookeeper restart 
+nohup ~/kafka/bin/kafka-server-start.sh ~/kafka/config/server.properties > ~/kafka/kafka.log 2>&1 &
+tail -f kafka.log 
+cd ..
+tail -f kafka.log 
+bin/zookeeper-server-start.sh config/zookeeper.properties &
+sudo service zookeeper stop
+bin/zookeeper-server-start.sh config/zookeeper.properties &
+nohup ~/kafka/bin/kafka-server-start.sh ~/kafka/config/server.properties > ~/kafka/kafka.log 2>&1 &
+bin/zookeeper-server-start.sh config/zookeeper.properties &
+nohup ~/kafka/bin/kafka-server-start.sh ~/kafka/config/server.properties > ~/kafka/kafka.log 2>&1 &
+jobs
+tail -f kafka.log 
+jobs %2
+fg
+nohup ~/kafka/bin/kafka-server-start.sh ~/kafka/config/server.properties > ~/kafka/kafka.log 2>&1 &
+tail -f kafka.log 
+cd config/
+ls
+more zookeeper.properties 
+cd ..
+ls
+cd bin/
+ls
+more zookeeper-server-start.sh 
+
+ls
+cd config/
+ls
+more zookeeper.properties 
+cd ..
+ls
+cd config
+ls
+cd ..
+vi ~/kafka/config/server.properties
+ls
+cd bin/
+ls
+more zookeeper-server-start.sh 
+more kafka-run-class.sh 
+sudo vi /etc/zookeeper/conf/zoo.cfg 
+more config/zookeeper.properties 
+more config/server.properties 
+sudo vi config/server.properties 
+sudo service zookeeper restart 
+~/kafka/bin/kafka-server-start.sh ~/kafka/config/server.properties
+tail -f /var/log/zookeeper/zookeeper.log 
+jobs
+kill %1
+jobs
+tail -f /var/log/zookeeper/zookeeper.log 
+cd /var/lib/zookeeper/version-2/
+ls -al
+cd ..
+ls
+ls -al
+id zookeeper
+sudo chown -R zookeeper:zookeeper *
+ls -al
+tail -f /var/log/zookeeper/zookeeper.log 
+jobs
+kill %2
+cd
+~/kafka/bin/kafka-server-start.sh ~/kafka/config/server.properties
+sudo vi /etc/zookeeper/conf/zoo.cfg 
+vi config/server.properties 
+vi kafka/config/server.properties 
+~/kafka/bin/kafka-server-start.sh ~/kafka/config/server.properties
+nohup ~/kafka/bin/kafka-server-start.sh ~/kafka/config/server.properties > ~/kafka/kafka.log 2>&1 &
+tail -f kafka/kafka.log 
+echo "Hello, World" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic TutorialTopic > /dev/null
+~/kafka/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic TutorialTopic --from-beginning
+df -h
+exit
+ls
+cd kafka/
+nohup bin/kafka-server-start.sh config/server.properties&
+ps -eaf
+ls
+more kafka.log 
+ls
+cd logs/
+ls -al
+tail -f kafkaServer-gc.log 
+tail -f server.log
+cd kafka/
+ls
+./bin/kafka-server-start.sh 
+./bin/kafka-server-start.sh  ./config/server.properties 
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+ls
+ps -eaf
+cd kafka/
+ls
+more kafka.log 
+ls
+more NOTICE 
+cd ..
+ls
+cd Downloads/
+ls
+cd kafka/
+./bin/kafka-consumer-groups.sh 
+./bin/kafka-consumer-groups.sh  --topic coursera
+./bin/kafka-consumer-groups.sh --list --topic coursera
+bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic coursera --from-beginning
+bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic coursera
+cd kafka/
+bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic coursera
+kill %1
+jobs
+kill %1
+jobs
+fg
+bg
+jobs
+kill -9 %1
+jobs
+kill -9 %1
+mvn package
+./bin/kafka-consumer-groups.sh  --
+bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic coursera
+bg
+./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic capstone
+kill -9 %1
+bin/kafka-console-consumer.sh --zookeeper localhost:2181 --new-consumer --topic coursera
+bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic coursera  --consumer.config ./config/consumer.properties 
+bg
+kill -9 %1
+bin/kafka-console-consumer.sh --zookeeper localhost:2181 --from-beginning --topic coursera
+bg
+kill -9 %3
+jobs
+kill -9 %2
+jobs
+bin/kafka-console-consumer.sh --zookeeper localhost:2181 --from-beginning --topic coursera
+bin/kafka-console-consumer.sh --zookeeper localhost:2181 --from-beginning --topic capstone
+ls
+cd ..
+ls
+cd Downloads/
+ls
+wget http://apache.mindstudios.com/kafka/0.8.2.2/kafka_2.10-0.8.2.2.tgz
+cd ..
+ls
+mv kafka/ kafka-0.9
+mkdir kafka
+ls
+cd ..
+ls
+cd
+ls
+rm -rf kafka
+ls -al
+tar zxvf Downloads/kafka_2.10-0.8.2.2.tgz 
+ln -s kafka_2.10-0.8.2.2/ kafka
+ls -al
+cd kafka
+ls
+cd kafka/
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+ls
+bin/kafka-topics.sh --describe --zookeeper localhost:2181 --topic coursera
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic coursera
+more bin/kafka-console-producer.sh 
+cd bin
+ls
+more kafka-run-class.sh
+ls
+more kafka-producer-perf-test.sh 
+cd ..
+ls
+cd libs/
+ls
+cd ..
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic coursera
+bin/kafka-topics.sh --zookeeper localhost:2181 --alter --topic capstone --config retention.ms=1000
+bin/kafka-config.sh --zookeeper localhost:2181 --alter --topic capstone --config retention.ms=1000
+bin/kafka-configs.sh --zookeeper localhost:2181 --alter --topic capstone --config retention.ms=1000
+bin/kafka-config.sh --zookeeper localhost:2181 --alter --topic capstone --config retention.ms=1000
+bin/kafka-configs.sh --zookeeper localhost:2181 --alter --topic capstone --config retention.ms=1000
+bin/kafka-topics.sh --zookeeper localhost:2181 --alter --topic capstone --config retention.ms=1000
+bin/kafka-topics.sh --zookeeper localhost:2181 --alter --topic capstone --config retention.ms=2000000
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic coursera
+./bin/kafka-topics --list --zookeeper master:2181
+./bin/kafka-topics.sh --list --zookeeper master:2181
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic capstone
+cd ..
+ls
+ps -eaf | grep kafka
+kill -9 8660
+kill -9 12211
+ps -eaf | grep kafka
+cd kafka
+ls
+nohup ./bin/kafka-server-start.sh  ./config/server.properties 
+bg
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic capstone
+cd kafka
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+jobs
+cd kafka
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+cd kafka
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+jobs
+cd k
+df -h
+cd /tmp
+ls
+rm ù
+rm -rf kafka-logs
+df -h
+du -h
+cd d
+cd data
+ls
+rm *1999*
+sudo rm *1999*
+ls
+df -h
+cd
+cd kafka
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+ps -eaf 
+ps -eaf  | grep kafka
+kill -9 25468
+top
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+cd kafka
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+netstat -an
+ps -eaf 
+kill -9 29157
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+ps -eaf
+cd kafka/bin/
+ls
+./kafka-reassign-partitions.sh 
+./kafka-producer-perf-test.sh 
+./kafka-producer-perf-test.sh  --topics capstone
+./kafka-producer-perf-test.sh  --broker-list localhos:2181 --topics capstone
+./kafka-producer-perf-test.sh  --broker-list localhos:2181 --topics capstone -message test
+./kafka-producer-perf-test.sh  --broker-list localhos:2181 --topics capstone --message test
+./kafka-producer-perf-test.sh  --broker-list localhos:2181 --topics capstone --messages test
+./kafka-producer-perf-test.sh  --broker-list localhos:2181 --topics capstone --messages 1000000
+cd ..
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+./bin/kafka-producer-perf-test.sh  --broker-list localhos:2181 --topics capstone --messages 1000000
+./bin/kafka-producer-perf-test.sh  --broker-list localhost:2181 --topics capstone --messages 1000000
+./bin/kafka-producer-perf-test.sh  --broker-list localhost:9092 --topics capstone --messages 1000000
+./bin/kafka-producer-perf-test.sh  --broker-list localhost:9092 --topics capstone --messages 10000000
+bin/kafka-topics.sh 
+bin/kafka-topics.sh --delete capstone
+bin/kafka-topics.sh --delete capstone --zookeeper localhost:2181
+bin/kafka-topics.sh --delete --topic capstone --zookeeper localhost:2181
+bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 10 --topic capstone  
+bin/kafka-reassign-partitions.sh 
+bin/kafka-topics.sh 
+bin/kafka-topics.sh --describe 'capston'
+bin/kafka-topics.sh --describe 'capstone' 
+./bin/kafka-producer-perf-test.sh  --broker-list localhost:9092 --topics capstone --messages 10000000
+cd config/
+l
+ls
+more server.properties 
+ls
+cd ..
+bin/kafka-topics.sh --delete --topic capstone --zookeeper localhost:2181
+jobs
+kill %1
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+bin/kafka-topics.sh --delete --topic capstone --zookeeper localhost:2181
+kill %1
+jobs
+kill %2
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+kill %3
+vi config/server.properties 
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+ls
+./bin/kafka-console-consumer.sh -h
+./bin/kafka-console-consumer.sh --help
+./bin/kafka-console-consumer.sh 
+./bin/kafka-console-consumer.sh --topic capstone
+./bin/kafka-console-consumer.sh --topic capstone --zookeeper=localhost:8121
+./bin/kafka-console-consumer.sh --topic capstone --zookeeper=localhost:2181
+./bin/kafka-console-consumer.sh --topic capstone --zookeeper=localhost:2181 --frombeginning
+./bin/kafka-console-consumer.sh --topic capstone --zookeeper=localhost:2181 --from-beginning
+./bin/kafka-console-consumer.sh
+./bin/kafka-console-consumer.sh --topic capstone --zookeeper=localhost:2181 --from-beginning --delete-consumer-offsets               If specified, the consumer path in     
+./bin/kafka-console-consumer.sh --topic capstone --zookeeper=localhost:2181 --from-beginning --delete-consumer-offsets
+bin/kafka-topics.sh --zookeeper localhost:2181 --alter --topic capstone --config retention.bytes=1
+./bin/kafka-console-consumer.sh --topic capstone --zookeeper=localhost:2181 --from-beginning --delete-consumer-offsets
+vi ./config/server.properties 
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+sudo tail -f /var/log/messages
+sudo tail -f /var/log/message
+sudo ls /var/log
+sudo tail -f /var/log/dmesg
+sudo tail -f /var/log/zookeeper/zookeeper.log 
+bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 10 --topic capstone10 
+./bin/kafka-console-consumer.sh --topic capstone10 --zookeeper=localhost:2181 --from-beginning --delete-consumer-offsets
+jobs
+kill %1
+vi ./config/server.properties 
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+jobs
+kill %1
+bin/kafka-topics.sh --zookeeper localhost:2181 --alter --topic capstone10 --config retention.ms=1000
+./bin/kafka-console-consumer.sh --topic capstone10 --zookeeper=localhost:2181 --from-beginning --delete-consumer-offsets
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+jobs
+./bin/kafka-console-consumer.sh --topic capstone10 --zookeeper=localhost:2181 --from-beginning --delete-consumer-offsets
+sudo service zookeeper stop
+./bin/zookeeper-server-start.sh --config ./config/zookeeper.properties 
+./bin/zookeeper-server-start.sh ./config/zookeeper.properties 
+bg
+jobs
+bg
+kill %1
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+jobs
+kill%2
+kil l%2
+kil l%
+kill %2
+kill %1
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+sudo service zookeeper restart
+kill %1
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+./bin/kafka-console-consumer.sh --topic capstone10 --zookeeper=localhost:2181 --from-beginning --delete-consumer-offsets
+bin/kafka-topics.sh --zookeeper localhost:2181 --alter --topic capstone10 --config retention.ms=240000
+./bin/kafka-console-consumer.sh --topic capstone10 --zookeeper=localhost:2181 --from-beginning --delete-consumer-offsets
+cd Downloads/
+ls
+nodetool status
+sudo service cassandra status 
+sudo service cassandra start
+sudo service cassandra status 
+more /etc/cassandra/
+more /etc/cassandra/cassandra.yaml
+cd /var/log/
+ls
+cd cassandra/
+more system.log 
+ssh slave01
+sudo service cassandra status 
+cd
+cd kafka
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+cd kafka
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+kill %1
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+jobs
+cd kafka
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+df -h
+sudo mount /dev/xvdk /mnt/kafka/
+df -h
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+cd kafka
+sudo mount /dev/xvdk /mnt/kafka/
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+cd kafka
+sudo mount /dev/xvdk /mnt/kafka/
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+cd kafka
+sudo mount /dev/xvdk /mnt/kafka/
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+df -h
+cd /tmp
+ls
+du -h
+df -h
+du -h
+du -h | grep G
+cd data/
+ls
+rm *
+rm -rf *
+sudo rm -rf *
+df -h
+cd ..
+du -h
+sudo rm *
+sudo rm -rf *
+du -h
+df -h
+jobs
+kill %1
+cd 
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+cd kafka
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+~Start.sh
+~/Start.sh
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &
+cd kafka
+nohup ./bin/kafka-server-start.sh  ./config/server.properties &

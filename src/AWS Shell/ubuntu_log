@@ -1,0 +1,2000 @@
+sudo useradd kafka -m
+cd
+ls
+cd
+ls
+passwd kafka
+sudo passwd kafka
+sudo adduser kafka sudo
+su - kafka
+vi /usr/local/hadoop/etc/hadoop/core-site.xml 
+vi /usr/local/hadoop/etc/hadoop/hdfs-site.xml 
+sudo vi /usr/local/hadoop/etc/hadoop/hdfs-site.xml 
+ls
+df -h
+sudo vi /etc/fstab
+mount
+umount /dev/xvdf 
+sudo umount /dev/xvdf 
+sudo mount
+man fstab
+sudo mount -a
+df -h
+cd /usr/local/spark
+ls
+cd conf/
+ls
+more slaves.template 
+more spark-env.sh.template 
+ls
+more spark-env.sh.template 
+cd ..
+./bin/spark-submit --class org.apache.spark.examples.streaming.JavaKafkaWordCount --master local[2] /home/ubuntu/spark/target/spark-examples-1.0-SNAPSHOT.jar /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv /home/ubuntu/t.txt
+./bin/spark-submit --class org.apache.spark.examples.streaming.JavaKafkaWordCount --master local[2] /home/ubuntu/spark/target/first-example-1.0-SNAPSHOT.jar /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv /home/ubuntu/t.txt
+ls
+ls /home/kafka
+ls /home/kafka/Do*
+cd /usr/local/
+cd spark
+ls
+./sbin/start-master.sh 
+ls
+ls -al
+mkdir logs
+sudo mkdir logs
+sudo chmod 777 logs
+./sbin/start-master.sh 
+ls logs/
+ls -al
+cd logs
+ls -al
+tail -f spark-ubuntu-org.apache.spark.deploy.master.Master-1-ip-172-31-56-183.out 
+cd ../
+ls
+./sbin/start-slave.sh spark://ip-172-31-56-183:7077
+sudo mkdir work
+sudo chmod 777 work
+./sbin/start-slave.sh spark://ip-172-31-56-183:7077
+cd
+ls
+cd spark/
+ls
+rm spark-1.6.0-bin-hadoop2.6.tgz 
+vi w.java
+mv w.java JavaKafkaWordCount.java
+ls -al
+vi pom.xml
+ls -al /usr/local/
+ls
+more JavaKafkaWordCount.java 
+ls -al
+vi pom.xml 
+mvn
+mkdir src
+mkdir target
+mv JavaKafkaWordCount.java  src/
+mvn
+mvn package
+cd src/
+ls
+more JavaKafkaWordCount.java 
+cd ..
+ls
+cd target/
+ls
+cd ..
+vi pom.xml 
+mvn package
+vi pom.xml 
+mvn package
+ls
+cd target/
+ls -al
+ls -alh
+cd ..
+ls
+more pom.xml 
+mvn package
+ls
+cd src/
+ls
+vi JavaKafkaWordCount.java 
+cd .;
+mvn clean package
+cd ..
+mvn clean package
+vi pom.xml 
+mvn clean package
+cp pom.xml pom.xml.old
+vi pom.xml
+mvn clean package
+vi pom.xml
+mvn clean package
+vi pom.xml
+mvn clean package
+vi pom.xml
+mvn clean package
+vi pom.xml
+mvn clean package
+vi pom.xml
+mvn clean package
+vi src/JavaKafkaWordCount.java 
+mvn package
+vi pom.xml
+mvn package
+vi src/JavaKafkaWordCount.java 
+mvn package
+vi src/JavaKafkaWordCount.java 
+mvn -X package
+vi src/JavaKafkaWordCount.java 
+mvn -X package
+ls
+more pom.xml.old 
+vi pom.xml
+mvn package
+vi pom.xml
+mvn package
+mvn -X package
+vi src/JavaKafkaWordCount.java 
+mvn -X package
+vi src/JavaKafkaWordCount.java 
+ls
+mkdir spark
+cd spark/
+wget http://d3kbcqa49mib13.cloudfront.net/spark-1.6.0-bin-hadoop2.6.tgz
+tar zxvf spark-1.6.0-bin-hadoop2.6.tgz 
+ls
+cd spark-1.6.0-bin-hadoop2.6/
+ls
+more README.md 
+ls
+cd examples/
+ls
+cd src/
+ls
+cd main/
+ls
+cd java/
+ls
+cd org/
+ls
+cd apache/
+ls
+cd spark/
+ls
+cd examples/
+ls
+more JavaWordCount.java 
+cd
+cd spark/
+cd /usr/local/
+ls -al
+sudo adduser spark -m
+sudo adduser spark
+id spark
+sudo mv ~/spark/spark-1.6.0-bin-hadoop2.6 .
+sudo ln -s spark-1.6.0-bin-hadoop2.6/ spark
+ls -al
+sudo chown spark:spark spark-1.6.0-bin-hadoop2.6/
+sudo chown -R spark:spark spark-1.6.0-bin-hadoop2.6/
+cd spark
+ls
+ls -al
+sudo vi /etc/group
+df -h
+cd 
+ls
+ls -al
+cd java
+cd ..
+cd javacon/
+ls
+cd ..
+ls
+cd java
+ls
+cd ..
+su - kafka
+cd spark/
+ls
+cd kafka.produce.fly/
+ls
+mvn package
+java target/kafka.produce.fly-0.0.1-SNAPSHOT.jar capstone
+mvn
+mvn package
+java target/kafka.produce.fly-0.0.1-SNAPSHOT.jar LoadFly
+java LoadFly target/kafka.produce.fly-0.0.1-SNAPSHOT.jar
+man java
+java LoadFly -jar target/kafka.produce.fly-0.0.1-SNAPSHOT.jar
+java -jar target/kafka.produce.fly-0.0.1-SNAPSHOT.jar
+java -jar target/kafka.produce.fly-0.0.1-SNAPSHOT.jar LoadFly
+mvn exec:java -Dexec.mainClass="LoadFly.Main"
+mvn exec:java -Dexec.mainClass="LoadFly.main"
+mvn exec:java -Dexec.mainClass="LoadFly"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="20"
+vi src/main/java/LoadFly.java 
+ls target/
+vi src/main/java/LoadFly.java 
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="20"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="20"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="20"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="200"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="200"
+cd spark/
+ls
+cd group1-question1/
+mvn package
+cd target/
+ls -al
+ls -alh
+cd ..
+ls
+/usr/local/spark/bin/spark-submit --class PopularAirport --master local[2] ./group1-question1-0.0.1-SNAPSHOT.jar /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv /home/ubuntu/t.txt
+/usr/local/spark/bin/spark-submit --class PopularAirport --master local[2] ./target/group1-question1-0.0.1-SNAPSHOT.jar /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv /home/ubuntu/t.txt
+/usr/local/spark/bin/spark-submit --class PopularAirport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv /home/ubuntu/t.txt
+/usr/local/spark/bin/spark-submit --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv /home/ubuntu/t.txt
+/usr/local/spark/bin/spark-submit --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  0 2
+mvn
+mvn clear package
+mvn clean  package
+mvn  package
+vn package
+ls
+mvn package
+/usr/local/spark/bin/spark-submit --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  0 2
+mvn package
+/usr/local/spark/bin/spark-submit --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  0 2
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  0 2
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 2
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 0
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+su -kafka
+su - kafka
+su -kafka
+su - kafka
+ls
+cd spark/
+ls
+cd kafka.produce.fly/
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="200"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="200"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="2000"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="20"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="20"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="20"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="20"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="20"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="20"
+ls
+cd spark/
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+ls
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[1] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+ls
+cd gou
+cd group1-question1/
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+ls -al
+more pom.xml 
+ls -al /usr/local
+cd spark
+ls
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+ls
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn -Pyarn -Phadoop-2.4 -Dhadoop.version=VERSION -DskipTests clean package
+mvn -Pyarn -Phadoop-2.6 -Dhadoop.version=VERSION -DskipTests clean package
+ls
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+more pom.xml 
+cd ..
+mkdir libs
+cd libs
+ls 
+wget http://www.java2s.com/Code/JarDownload/google-collections/google-collections-1.0.jar.zip
+unzip google-collections-1.0.jar.zip 
+ls -al
+rm *.zip
+cd ../group1-question1/
+ls
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jar ~/spark/libs/google-collections-1.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+cd /usr/local/
+ls
+cd spark
+ls
+./bin/spark-shell --master local[2]
+cd ..
+sudo wget http://d3kbcqa49mib13.cloudfront.net/spark-1.5.2-bin-hadoop2.6.tgz
+sudo apt-get scala
+sudo apt-get install scala
+ls -al
+sudo tar zxvf spark-1.5.2-bin-hadoop2.6.tgz 
+ls -al
+sudo chown -R spark:spark spark-1.5.2-bin-hadoop2.6
+sudo rm spark
+sudo spark-1.5.2-bin-hadoop2.6/ spark
+sudo spark-1.5.2-bin-hadoop2.6 spark
+sudo ln -s spark-1.5.2-bin-hadoop2.6 spark
+ls -al
+cd spark
+ls
+ps -eaf | grep spark
+sudo kill -9 8437
+ps -eaf | grep spark
+./sbin/start-master.sh 
+ls -al
+mkdir logs
+ls -al
+sudo mkdir logs
+sudo chown spark:spark logs/
+./sbin/start-master.sh 
+sudo chmod 775 logs
+./sbin/start-master.sh 
+ls
+cd lib/
+ls
+cd ..
+cd /usr/local/
+cd spark
+ls
+./sbin/start-master.sh 
+su - kafka
+sudo service zookeeper restart
+su - kafka
+cd spark/kafka.produce.fly/
+ls
+mvn package
+ps -eaf | grep spark
+cd /usr/local/spark
+./sbin/start-master.sh 
+./sbin/start-slave.sh 
+./sbin/start-slave.sh  spark://localhost:7077
+cd
+cd spark/
+ls
+cd group1-question1/
+ls
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+cd spark/
+ls
+cp kafka.produce.fly/
+cd kafka.produce.fly/
+ls
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="20"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="20"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="2000"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="200000"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="2000000"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="1000000"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="500000"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="200000"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="400000"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="300000"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="250000"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="200000"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="220000"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="240000"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="250000"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="250000" ~/On_Time_On_Time_Performance_1988_1.csv
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="250000" -Dexec.args="~/On_Time_On_Time_Performance_1988_1.csv"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="250000 ~/On_Time_On_Time_Performance_1988_1.csv"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="250000 /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="250000 /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv"
+more /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv
+vi /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="250000 /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv"
+vi src/main/java/LoadFly.java 
+mvn package
+cd /usr/local/
+ls
+cd 
+ls
+cd spark
+ls
+cd libs/
+ls
+cd /usr/
+ls
+cd local/
+ls
+cd /usr
+ls
+cd /usr/cassandra
+ls
+cd /usr/lib/
+ls
+cd /vaf/lib
+ls
+cd /var/lib/cassandra
+ls
+more commitlog/
+cd commitlog/
+ls
+morr CommitLog-4-1455187315
+more CommitLog-4-1455187315
+ls -alh
+rm *
+sudo rm *
+ls -al
+cd ..
+ls
+cd ../cassandra
+ls
+cd commitlog/
+ls
+ls -al
+cd ..
+nodetool status
+nodetool version
+cd 
+ls
+cd task1/
+ls
+cd G2/
+ls
+cd build/
+ls
+cd com/
+ls
+cd datastax/
+ls
+cd driver/
+ls
+cd core/
+ls
+cd
+cd spark/
+ls
+wget http://downloads.datastax.com/java-driver/cassandra-java-driver-2.1.9.tar.gz
+tar zxvf cassandra-java-driver-2.1.9.tar.gz 
+ls
+rm cassandra-java-driver-2.1.9.tar.gz 
+ls -al
+cd cassandra-java-driver-2.1.9/
+ls
+cd lib/
+ls
+cd ..
+ls
+cd ..
+cd group1-question1/
+ls -al
+cd ..
+ls
+cd cassandra-java-driver-2.1.9/
+ls
+cd spark
+ls
+cd group1-question1/
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+export JAVA_HOME=$(/usr/libexec/java_home)
+mvn -version
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+echo $JAVA_HOME
+export JAVA_HOME=/usr
+echo $JAVA_HOME
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar;~/spark/cassandra-java-driver-2.1.9/* --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar:~/spark/cassandra-java-driver-2.1.9/* --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar -jars ~/spark/cassandra-java-driver-2.1.9/* --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar,~/spark/cassandra-java-driver-2.1.9/* --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+~/spark/cassandra-java-driver-2.1.9/lib/
+ls ~/spark/cassandra-java-driver-2.1.9/lib/*
+ls ~/spark/cassandra-java-driver-2.1.9/*
+ls ~/spark/cassandra-java-driver-2.1.9/cassandra-driver-core-2.1.9.jar
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar,~/spark/cassandra-java-driver-2.1.9/* --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar, --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+ls ~/spark/cassandra-java-driver-2.1.9/cassandra-driver-core-2.1.9.jar
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar,/home/ubuntu/spark/cassandra-java-driver-2.1.9/cassandra-driver-core-2.1.9.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+cd ..
+ls
+cd libs
+wget https://repo1.maven.org/maven2/com/datastax/cassandra/cassandra-driver-core/2.0.10/cassandra-driver-core-2.0.10.jar
+wget https://repo1.maven.org/maven2/com/datastax/cassandra/cassandra-driver-core/2.0.10/cassandra-driver-core-2.0.10-shaded.jar
+cd ..
+cd group1-question1/
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10-shaded.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+cd ../libs/
+wget http://central.maven.org/maven2/com/datastax/spark/spark-cassandra-connector_2.10/1.4.1/spark-cassandra-connector_2.10-1.4.1.jar
+cd ../group1-question1/
+ls
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar,/home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar,/home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/* --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar,/home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/cassandra-java-drive-2.1.9/cassandra-driver-core-2.1.9.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar,/home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/cassandra-java-driver-2.1.9/cassandra-driver-core-2.1.9.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar,/home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/cassandra-java-driver-2.1.9/cassandra-driver-core-2.1.9.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+cd spark/
+ls
+cd kafka.produce.fly/
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="250000 /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="250000 /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="250000 /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="250000 /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv"
+mvn -version
+su - kafka
+cd /usr/local/spark
+./sbin/start-master.sh 
+./sbin/start-slave
+./sbin/start-slave.sh 
+./sbin/start-slave.sh spark://localhost:7077
+cd spark/
+cd libs/
+wget http://search.maven.org/remotecontent?filepath=com/google/guava/guava/18.0/guava-18.0.jar
+ls
+ls -alh
+mv remotecontent\?filepath\=com%2Fgoogle%2Fguava%2Fguava%2F18.0%2Fguava-18.0.jar guava-18.0.jar
+ls -al
+cd ..
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar,/home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/cassandra-driver-core-2.1.9.jar,home/ubuntu/spark/guava-18.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar,/home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.1.9.jar,home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+ls
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar,/home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.1.9.jar,home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+ls libs
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar,/home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.1.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+ls libs
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar,/home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+ls /usr/local/spark/lib/
+ls /usr/local/hadoop/lib/
+ls /usr/local/hadoop/lib/native/
+ls /usr/local/hadoop/
+cd group1-question1/
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars ~/spark/libs/google-collections-1.0.jar,/home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+more On_Time_On_Time_Performance_1988_1.csv 
+cd /usr/local/spark
+./sbin/start-master.sh 
+./sbin/stop-master.sh 
+./sbin/start-master.sh 
+./sbin/stop-slave
+./sbin/stop-slave.sh 
+./sbin/start-slave.sh 
+./sbin/start-slave.sh spark://localhost:7077
+./sbin/stop-slave.sh 
+./sbin/stop-master.sh 
+cd /tmp
+ls
+cd log-analyzer-streaming/
+ls
+cd ..
+ps -eaf | grep
+ps -eaf
+su - kafka
+cd spark/
+ls
+cd kafka.produce.fly/
+mvn package
+ls
+grep "-Dargs" ~/.bash_history 
+grep "args" ~/.bash_history 
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="250000 /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="250000 /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv"
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="2500 /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv"
+ls
+sudo mount /dev/xvdg /mnt/data
+./impdata_kafka.sh 
+df -h
+./impdata_kafka.sh 1998
+ls /tmp/data/
+rm /tmp/data/
+rm /tmp/data/*
+./impdata_kafka.sh 1999
+*
+./impdata_kafka.sh 1999
+jobs
+ssh slave01
+mkdir /nmt/tmp
+mkdir /mnt/tmp
+df -h
+sudo mount /dev/xvdp /mnt/tmp
+sudo mount /dev/xvdp1 /mnt/tmp
+cd /mnt/tmp
+ls
+df -h
+cd etc
+ls
+sudo vi fstab
+exit
+hostname -f
+ping ip-172-31-56-183.ec2.internal
+cd spark/
+cd group1-question1/
+ls
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+ps -eaf | grep java
+ps -eaf | grep "exec:java"
+ps -eaf | grep "exec:java" | cut -d " " -f 2
+ps -eaf | grep "exec:java" | cut -d " " -f 1
+ps -eaf | grep "exec:java" | cut -d " " -f 3
+ps -eaf | grep "exec:java" | cut -d " " -f 4
+ps -eaf | grep "exec:java" | cut -d " " -f 1
+ps -eaf | grep "exec:java" | cut -f 4
+ps -eaf | grep "exec:java" | cut -d " " -f 4
+ps -eaf | grep "exec:java" | cut -d " " -f 1,5
+ps -eaf | grep "exec:java" | cut -d " " -f 5
+ps -eaf | grep "exec:java" | cut -d " " -f 5 | while p ; do sudo kill -9 $p; done
+ps -eaf | grep "exec:java" | cut -d " " -f 5
+ps -eaf | grep "exec:java" | cut -d " " -f 5 | while read p ; do sudo kill -9 $p; done
+ps -eaf | grep "exec:java" | cut -d " " -f 5
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+nodetool status
+sudo service cassandra restart
+nodetool status
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master local[2] --deploy-mode:cluster ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master local[2] --deploy-mode cluster ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master spark://ip-172-31-56-183:7077 --deploy-mode cluster ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+ls /home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master spark://ip-172-31-56-183:7077 --deploy-mode cluster ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+scp /home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar slave01:.
+scp /home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar slave02:.
+scp /home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar slave03:.
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master spark://ip-172-31-56-183:7077 --deploy-mode cluster ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master spark://ip-172-31-56-183:6066 --deploy-mode cluster ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master spark://ip-172-31-56-183:7077 --deploy-mode cluster ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master spark://ip-172-31-56-183:7077 --deploy-mode cluster --supervise ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master spark://ip-172-31-56-183:7077 --deploy-mode cluster --cores 6 --supervise ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master spark://ip-172-31-56-183:7077 --deploy-mode cluster --cores 2 --supervise ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+ps -eaf | grep "exec:java"
+ps -eaf | grep "java"
+top
+ps -eaf | grep "java"
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master spark://ip-172-31-56-183:7077 --deploy-mode cluster --cores 2 --supervise ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master spark://ip-172-31-56-183:7077 --deploy-mode cluster --executor-cores 6 --supervise ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+export YARN_CONF_DIR=/usr/local/hadoop/etc/hadoop/
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master spark://ip-172-31-56-183:7077 --deploy-mode cluster --executor-cores 6 --supervise ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+export YARN_CONF_DIR=/usr/local/hadoop/etc/hadoop/
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassa
+ndra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/group1-question1/target/group1-question1-0
+.0.1-SNAPSHOT.jar --class topairport --master cluster-yarn --deploy-mode cluster --executor-cores 6 --supervise ~/spark/group1-question1/target/group1-question1-0.0.1-SNA
+PSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandradriver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master cluster-yarn --deploymode cluster --executor-cores 6 --supervise ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandradriver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master yarn-cluster --deploymode cluster --executor-cores 6 --supervise ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandradriver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+ssh slave01
+ls
+cd spark/
+ls
+tar cvf libs.tar libs/
+ls
+scp libs.tar slave01:.
+scp libs.tar slave02:.
+scp libs.tar slave03:.
+cd /usr/local/spark
+./sbin/start-master.sh 
+./sbin/stop-master.sh 
+./sbin/start-master.sh 
+./Start.sh 
+./Stop.sh 
+./Start.sh 
+cd /usr/local/spark
+./sbin/start-master.sh 
+./sbin/stop-master.sh 
+./sbin/start-master.sh 
+tail -f /usr/local/spark-1.5.2-bin-hadoop2.6/sbin/../logs/spark-ubuntu-org.apache.spark.deploy.master.Master-1-ip-172-31-56-183.out
+cd et
+ls
+cd etc
+cd conf/
+ls
+more spark-env.sh.template 
+cp spark-env.sh.template spark-env.sh
+sudo cp spark-env.sh.template spark-env.sh
+sudo vi spark-env.sh
+cd ..
+./sbin/stop-master.sh 
+./sbin/start-master.sh 
+tail -f /usr/local/spark-1.5.2-bin-hadoop2.6/sbin/../logs/spark-ubuntu-org.apache.spark.deploy.master.Master-1-ip-172-31-56-183.out
+./sbin/stop-master.sh 
+./conf/spark-env.sh
+./sbin/start-master.sh 
+tail -f /usr/local/spark-1.5.2-bin-hadoop2.6/sbin/../logs/spark-ubuntu-org.apache.spark.deploy.master.Master-1-ip-172-31-56-183.out
+cd
+cd spark/
+cd kafka.produce.fly/
+sudo mount /dev/xvdg /mnt/data
+./impdata_kafka.sh 1998
+jobs
+rm /tmp/data/*
+./impdata_kafka.sh 1999
+
+sudo umount /mnt/tmp 
+ping ip-172-31-56-183
+sudo mount /dev/xvdp1 /mnt/tmp
+cd /mnt/tmp/etc/
+vi fstab
+sudo mount /dev/xvdp1 /mnt/tmp
+mount 
+df -h
+sudo vi fstab
+cd ..
+sudo umount /mnt/tmp 
+sudo mount /dev/xvdp1 /mnt/tmp
+sudo vi /mnt/tmp/etc/fstab
+sudo umount /mnt/tmp 
+su - kafka
+ssh slave03
+ssh slave02
+cd spark/
+cd kafka.produce.fly/
+sudo mount /dev/xvdg /mnt/data
+ls
+./impdata_kafka.sh 1998
+ps -eaf | grep "exec:java"
+ps -eaf | grep "exec:java" | cut -d " " -f 5
+ps -eaf | grep "exec:java" | cut -d " " -f 4
+ps -eaf | grep "exec:java" | cut -d " " -f 5 | while read p; do sudo kill -9 $p; done
+ps -eaf | grep "exec:java" | cut -d " " -f 4 | while read p; do sudo kill -9 $p; done
+ps -eaf | grep "exec:java"
+./impdata_kafka.sh 1998
+./impdata_kafka.sh 1999
+mvn package
+./impdata_kafka.sh 1999
+mvn package
+./impdata_kafka.sh 1998
+mvn package
+more impdata_kafka.sh 
+./impdata_kafka.sh 1998
+mvn package
+./impdata_kafka.sh 1998
+./Start.sh 
+hadoop fs --rm -r -f /coursera/input_short
+hadoop fs -rm -r -f /coursera/input_short
+hadoop 
+
+hadoop fs -rm -r -f /coursera/input_short
+hfds
+hfs
+hdfs
+hdfs dfsadmin
+hdfs dfsadmin -safemore leave
+hdfs dfsadmin -safemode leave
+hadoop fs -rm -r -f /coursera/input_short
+hdfs
+hdfs fsck 
+hdfs fsck /
+hadoop fs -rm -r -f /coursera/input_short2
+hdfs fsck /
+hadoop fs -rm -r -f /coursera/input2_short
+hdfs fsck /
+hadoop fs -rm -r -f /coursera/G1-Q1-output
+hdfs fsck /
+nodetool status
+cd spark/group1-question1/
+mvn package
+hadoop fs -put target/group1-question1-0.0.1-SNAPSHOT.jar /
+hadoop fs -rm /group1-question1-0.0.1-SNAPSHOT.jar
+hadoop fs -put target/group1-question1-0.0.1-SNAPSHOT.jar /
+hadoop fs -rm /group1-question1-0.0.1-SNAPSHOT.jar
+hadoop fs -put target/group1-question1-0.0.1-SNAPSHOT.jar /
+hadoop fs -rm /group1-question1-0.0.1-SNAPSHOT.jar
+hadoop fs -put target/group1-question1-0.0.1-SNAPSHOT.jar /
+hadoop fs -rm /group1-question1-0.0.1-SNAPSHOT.jar
+hadoop fs -put target/group1-question1-0.0.1-SNAPSHOT.jar /
+hadoop fs -rm /group1-question1-0.0.1-SNAPSHOT.jar
+hadoop fs -put target/group1-question1-0.0.1-SNAPSHOT.jar /
+hadoop fs -cat /G1-Q1/*
+cd /tmp/data
+ls
+tail -f On_Time_On_Time_Performance_1998_9.csv
+tail -f On_Time_On_Time_Performance_1998_9.csv > e
+tail -40 On_Time_On_Time_Performance_1998_9.csv > e
+vi e
+ls
+wc -l On_Time_On_Time_Performance_1998_8.csv
+ls
+ls -al
+ls ~
+chmod a+x ~/extractKafka.py 
+~/extractKafka.py On_Time_On_Time_Performance_1998_4.csv 
+sudo apt-get install python-pip
+sudo apt-get update
+sudo apt-get install python-pip
+pip install kafka-python
+sudo pip install kafka-python
+~/extractKafka.py On_Time_On_Time_Performance_1998_4.csv 
+df -h
+~/extractKafka.py On_Time_On_Time_Performance_1998_4.csv 
+~/extractKafka.py On_Time_On_Time_Performance_1998_5.csv 
+cd 
+ls
+df -h
+du 
+du
+cd  /var/log/
+ls
+ls -alh
+cd cassandra/
+ls -al
+ls -alh
+rm s*
+sudo rm s*
+ls -al
+cd
+ls
+./extractKafka.py On_Time_On_Time_Performance_1988_1.csv 
+more On_Time_On_Time_Performance_1988_1.csv 
+./extractKafka.py On_Time_On_Time_Performance_1988_1.csv 
+./extractKafka.py ./On_Time_On_Time_Performance_1988_1.csv 
+./extractKafka.py
+./extractKafka.py ./On_Time_On_Time_Performance_1988_1.csv
+cp impdata4.sh impdata5.sh
+ls
+./impdata5.sh 
+cd /tmp
+ls
+cd data-2008/
+ls
+~/extractKafka.py On_Time_On_Time_Performance_2008_1.csv 
+cd
+./impdata5.sh 
+./impdata5.sh  1998
+./impdata5.sh  1999
+./impdata5.sh 2000
+rm /tmp/data/*
+./impdata5.sh 2001
+cd /tmp
+cd data
+ls
+df -h
+cd
+./impdata5.sh 
+./impdata5.sh 1998
+./impdata5.sh 1999
+./impdata5.sh 2000
+ls
+./Stop.sh 
+./Start.sh 
+
+ps -eaf | grep java
+ps -eaf | grep java | cut -d ' ' -f 2
+ps -eaf | grep java | cut -d ' ' -f 
+ps -eaf | grep java | cut -d " " -f 5 
+cut
+ps -eaf | grep "java" | cut -d " " -f 5 
+ps -eaf | grep "java"
+ps -eaf | grep "java" | cut -d " " 
+ps -eaf | grep "java" | cut -d " " -f 5
+ps -eaf | grep "java" | cut -d " " -f 4
+ps -eaf | grep "java" | cut -d " " -f 4 | while read p
+ps -eaf | grep "java" | cut -d " " -f 4 | while read p; do sudo kill -9 $p; done
+ps -eaf | grep "java"
+ps -eaf | grep "java" | cut -d " " -f 2 | while read p; do sudo kill -9 $p; done
+ps -eaf | grep "java"
+ps -eaf | grep "java" | cut -d " " -f 1
+ps -eaf | grep "java" | cut -d " " -f 2
+ps -eaf | grep "java" | cut -d " " -f 3
+ps -eaf | grep "java" | cut -d " " -f 3 | while read p; do sudo kill -9 $p; done
+ps -eaf | grep "java"
+sudo kill -9634
+sudo kill -9 634
+ps -eaf | grep "java"
+./Start.sh 
+ls
+./kafka.sh 
+hadoop fs -cat /G1-Q1/*
+df -h
+hadoop fs -cat /G1-Q1/*
+ls
+wc -l On_Time_On_Time_Performance_1988_1.csv 
+./extractKafka.py On_Time_On_Time_Performance_1988_1.csv 
+./extractKafka.py On_Time_On_Time_Performance_1988_1.csv | wc -l
+cp extractKafka.py extractKafka.py.ori 
+./extractKafka.py On_Time_On_Time_Performance_1988_1.csv | wc -l
+./extractKafka.py On_Time_On_Time_Performance_1988_1.csv 
+ls
+./extractKafka.py On_Time_On_Time_Performance_1988_1.csv 
+ssh slave01
+ssh slave03
+/usr/local/spark/sbin/start-slave.sh spark://ip-172-31-56-183:7077
+ssh slave03
+nodetool status
+cd /usr/local/spark
+./sbin/stop-master.sh 
+./sbin/start-master.sh 
+hadoop fs -rm -r -r /G1-Q1/
+du -h
+./sbin/stop-master.sh 
+./sbin/start-master.sh 
+nodetool status
+hadoop fs -cat /G1-Q1
+hadoop fs -cat /G1-Q1/
+hadoop fs -cat /G1-Q1/*
+cd /usr/local/
+cd hadoop
+cd logs/
+ls
+cd userlogs/
+ls -al
+cd application_145
+cd application_1455362251799_0011/
+ls
+cd container_1455362251799_0011_0
+cd container_1455362251799_0011_01_000001/
+ls
+ls -al
+more stderr 
+tail -f stderr 
+tail -f stdout 
+cd ..
+ls
+cd container_1455362251799_0011_02_000001/
+ls
+ls -al
+tail -f stderr 
+nodetool status
+sudo service cassandra restart
+nodetool status
+sudo service cassandra restart
+nodetool status
+sudo service cassandra restart
+tail -f /var/log/cassandra/debug.log 
+tail -f /var/log/cassandra/system.log
+sudo service cassandra restart
+tail -f /var/log/cassandra/system.log&
+sudo service cassandra restart
+tail -f /var/log/cassandra/debug.log 
+bg
+tail -f /var/log/cassandra/debug.log 
+sudo service cassandra restart
+ssh slave01 sudo service cassandra restart
+sudo service cassandra restart
+top
+sudo service cassandra restart
+jobs
+kill %1
+kill %2
+jobs
+cd ..
+ls -al
+cd application_1455368252016_0003
+ls
+cd container_1455368252016_0003_01_000001/
+ls
+more stderr r
+more stderr 
+nodetool status
+sudo service cassandra restart
+nodetool status
+sudo service cassandra restart
+cd
+cd /usr/local/hadoop
+ls
+du logs
+du -h logs
+rm -rf /tmp/*
+du -h /tmp/*
+cd spark/
+cd group1-question1/
+mvn package
+./impdata_kafka.sh 1998
+cd ../
+ls
+cd kafka.produce.fly/
+mvn package
+./impdata_kafka.sh 1998
+cd /var/log
+ls
+cd
+cd spark/
+ls
+cd kafka.produce.fly/
+ls
+cd target/
+ls
+cd ..
+ls
+java ./target/kafka.produce.fly-0.0.1-SNAPSHOT.jar
+java main ./target/kafka.produce.fly-0.0.1-SNAPSHOT.jar
+java  ./target/kafka.produce.fly-0.0.1-SNAPSHOT.jar
+java
+java  -jar ./target/kafka.produce.fly-0.0.1-SNAPSHOT.jar
+mvn package
+more impdata_kafka.sh 
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="/tmp/data/On_Time_On_Time_Performance_1998_10.csv"
+tail -5 /tmp/data/On_Time_On_Time_Performance_1998_10.csv
+tail -2 /tmp/data/On_Time_On_Time_Performance_1998_10.csv
+more /tmp/data/On_Time_On_Time_Performance_1998_10.csv
+tail -2 /tmp/data/On_Time_On_Time_Performance_1998_10.csv
+ps -eaf | grep kafk
+top
+ps -eaf | grep java
+ps -eaf | grep "java"
+ps -eaf
+nodetool status
+~/Stop.sh 
+top
+~/Start.sh 
+top
+cd /usr/local/spark
+./sbin/start-master.sh 
+su - kafka
+su - kafka
+Topic capstone is already marked for deletion.
+hbase
+zkcli
+su - zookeeper
+ps -eaf | grep "zookeeper"
+cd /tmp
+ls
+cd kafka-logs/
+ls
+ls -al
+rm TutorialTopic-0/
+rm -rf TutorialTopic-0/
+sudo rm -rf TutorialTopic-0/
+sudo rm -rf fly_short-0/
+sudo rm -rf coursera-0/
+sudo rm -rf capstone-0/
+ls
+du -h
+df -h
+ls
+ls -al
+df -h
+top
+cd /tmp/kafka-logs/
+ls
+ls -al
+cd spark/
+ls
+cd coursera/
+mvn package
+cd ..
+ls ~ 
+cd kafka.produce.fly/
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="/home/ubuntu/On_Time_On_Time_Performance_1988_1.csv"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="capstone10 /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="capstone10 /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv"
+mvn n package
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="capstone10 /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="capstone10 /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv"
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="capstone10 /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv"
+wc -l /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv
+mvn package
+wc -l /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="capstone10 /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv"
+top
+./kafka.sh 
+df -h
+cd /mnt/kafka/
+ls
+ls -al
+sudo chmod 777
+sudo chmod 777 .
+ls -al
+df -h
+cd /tmp
+du -h
+sudo rm -rf kafka-logs/
+df -h
+cd
+./kafka.sh 
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandradriver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandradriver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+export YARN_CONF_DIR=/usr/local/hadoop/etc/hadoop/
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandradriver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+cd spark/
+cd coursera/
+mvn package
+cd target/
+ls
+cd ..
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+nodetool status
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+hadoop fs -put target/group1-question1-0.0.1-SNAPSHOT.jar /
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+ls /tmp
+ls
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+cd ..
+ls
+cd group1-question1/
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+cd ../coursera/
+ls
+mvn package 
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+hadoop fs -rm -r -f /G1-Q1
+hadoop fs -rm -r -f /tmp
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+nodetool status
+sudo cassandra service restart
+nodetool status
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+cd spark
+cd kafka.produce.fly/
+mvn package
+mvn exec:java -Dexec.mainClass="LoadFly" -Dexec.args="capstone10 /home/ubuntu/On_Time_On_Time_Performance_1988_1.csv"
+df (h
+df -h
+cd /
+ls
+du -h
+cd /tmp
+du -h
+cd /var/
+du -h
+cd /home
+du -h
+cd /home/backup
+ls
+ls -al
+ls -alh
+sudo bzip2 On_Time_On_Time_Performance_2008_full.csv 
+df -h
+cd /usr/local/hadoop
+cd logs/
+ls
+ls -al
+cd userlogs/
+ls
+ls -al
+df -h
+du /tmp
+du -h /tmp
+df -h
+du -h /tmp
+df -h
+hadoop fs -cat /G1-Q1/
+hadoop fs -cat /G1-Q1/*
+hadoop fs -cat /G1-Q1/* | head -10
+hadoop fs -cat /G1-Q1/* | head -n 10
+df -h
+cd
+cd /root
+sudo sh
+hadoop fs -cat /G1-Q1/* | head -10
+hadoop fs -cat /G1-Q1/* | head -n 10
+hadoop fs -cat /G1-Q1/* | head -n 10
+./Stop.sh 
+cd /usr/local/spark
+ls
+./sbin/start-master.sh 
+hadoop
+hadoop fs -ls
+hadoop fs -ls /
+hadoop fs -rm -r -r .sparkStaging
+hadoop fs -rm -r -f /tmp
+hadoop fs -rm -r -f /usr/
+hadoop fs -rm -r -f /group1-question1-0.0.1-SNAPSHOT.jar
+hadoop fs -ls /
+hadoop fs -rm -r -f /G1-Q1
+~/Stop.sh 
+~/Start.sh 
+hadoop fs -rm -r -f /usr/
+hadoop fs -rm -r -f /tmp
+hadoop fs -rm -r -f /G1-Q1
+hadoop fs -rm -r -f /tmp
+nodetool status
+ls -al
+./extract2 On_Time_On_Time_Performance_1988_1.csv 
+./extract2 On_Time_On_Time_Performance_1988_1.csv | pv -L 10m  
+./extract2 On_Time_On_Time_Performance_1988_1.csv | pv -L 1m  
+./extract2 On_Time_On_Time_Performance_1988_1.csv | pv -L 10m  | /home/kafka/kafka/bin/kafka-console-producer.sh --broker-list=localhost:9092 --topic=capstone10
+./Start.sh 
+./extract2 On_Time_On_Time_Performance_1988_1.csv | pv -L 10m  | /home/kafka/kafka/bin/kafka-console-producer.sh --broker-list=localhost:9092 --topic=capstone10
+hadoop fs -cat /G1-Q1/*
+sudo mount /dev/xvdg /mnt/data/
+su - kafka
+w
+PV
+pv
+man pv
+nodetool status
+w
+nodetool status
+nodetool cleanup 
+sudo service cassandra restart 
+nodetool cleanup 
+nodetool status
+nodetool removenode 338e0c5c-64c5-4683-aacd-c8d9eb2a2d80
+nodetool removenode 5f02bd94-ae2e-41bc-b684-75cb58ea0bb4
+nodetool removenode d6b1a061-7143-41d5-be9f-db1d89aac389
+nodetool status
+nodetool removenode 2f17e9a2-a6b4-4fcf-8c1d-354a95d2944f
+nodetool decommission 
+sudo service cassandra restart 
+nodetool decommission 
+sudo service cassandra restart 
+nodetool decommission 
+nodetool status
+ps -eaf | grep cassandra
+sudo kill -9 2691
+ps -eaf | grep cassandra
+nodetool status
+sudo service cassandra restart 
+tail -f /var/log/cassandra/system.log 
+cqlsh 
+clear
+ls
+Hadoop/G
+hadoop fs -cat /G1-Q1/*
+hadoop fs -cat /G1-Q1/* | head -n 10
+hadoop fs -cat /G1-Q1/
+hadoop fs -ls /G1-Q1/*
+hadoop fs -cat /G1-Q1/part-00000
+clear
+hadoop fs -cat /G1-Q1/part-00000
+./Stop.sh 
+su - kafka
+sudo service cassandra restart 
+nodetool status
+hadoop fs -cat /G1-Q1/*
+nodetool status
+cd spark/
+cd coursera/
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar --class topcarrierinairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+export  YARN_CONF_DIR=/usr/local/hadoop/etc/hadoop/
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar --class topcarrierinairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+~/Stop.sh 
+~/Start.sh 
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar master:9092 capstone10
+nodetool status
+sudo service cassandra restart
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar master:9092 capstone10
+nodetool status
+cqlsh 
+nodetool status
+cqlsh master
+sudo service cassandra restart 
+cqlsh 
+sudo service cassandra restart 
+tail -f /var/log/cassandra/
+tail -f /var/log/cassandra/system.log 
+tail -40 /var/log/cassandra/system.log 
+df -h
+sudo vi /etc/cassandra/cassandra.yaml
+ssh slave0 sudo vi /etc/cassandra/cassandra.yaml
+ssh slave01 sudo vi /etc/cassandra/cassandra.yaml
+ssh slave01
+ssh slave02
+ssh slave03
+ssh slave01 service cassandra restart
+ssh slave01 sudo service cassandra restart
+ssh slave02 sudo service cassandra restart
+ssh slave03 sudo service cassandra restart
+nodetool status
+ssh master sudo service cassandra restart
+nodetool status
+cqlsh 
+ssh master sudo service cassandra restart
+sudo rm -r -f /var/lib/cassandra/*
+ssh master sudo service cassandra restart
+cqlsh 
+nodetool status
+ssh master sudo service cassandra restart
+tail -f /var/log/cassandra/system.log 
+ssh master sudo service cassandra restart
+tail -f /var/log/cassandra/system.log 
+df -h
+tail -f /var/log/cassandra/system.log 
+bg
+kill %1
+ssh master sudo service cassandra restart
+ssh master sudo rm -r -f /var/lib/cassandra/*
+ssh slave01 sudo rm -r -f /var/lib/cassandra/*
+ssh slave02 sudo rm -r -f /var/lib/cassandra/*
+ssh slave03 sudo rm -r -f /var/lib/cassandra/*
+ssh slave03 sudo service cassandra restart
+ssh slave02 sudo service cassandra restart
+ssh master sudo service cassandra restart
+ssh slave01 sudo service cassandra restart
+ssh master sudo service cassandra restart
+tail -f /var/log/cassandra/system.log 
+ls -al /var/lib/cassandra
+sudo chmod -R g+rwx /var/lib/cassandra/*
+ls -al /var/lib/cassandra
+ssh master sudo service cassandra restart
+tail -f /var/log/cassandra/system.log 
+cd /var/lib/cassandra
+ls
+cd data/
+ls
+cd system/
+ls
+cd ../../
+rm -r -f *
+sudo rm -r -f *
+ls
+ls -al
+sudo service cassandra restart 
+ls -al
+cd data/
+ls
+cd system/
+ls
+cd .
+ls
+cd .
+cd ..
+tail -f /var/log/cassandra/system.log 
+ls -al
+cd data/
+ls -al
+cd system/
+ls -al
+cd ..
+ssh slave01 sudo service cassandra restart
+ssh slave01 sudo service cassandr stop
+ssh slave01 sudo service cassandra stop
+ssh slave02 sudo service cassandra restart
+ssh slave03 sudo service cassandra restart
+ssh slave01 sudo service cassandra stop
+ssh slave01 sudo service cassandra restart 
+ssh slave02 sudo service cassandra restart 
+ssh slave03 sudo service cassandra restart 
+cd
+df -h
+./kafka.sh 
+more impdata_kafka.sh 
+more kafka.sh 
+./kafka.sh 
+grep "pv" .bash_history 
+grep "pv" .bash_history 
+./extract2 On_Time_On_Time_Performance_1988_1.csv | pv -L 10m  | /home/kafka/kafka/bin/kafka-console-producer.sh --broker-list=localhost:9092 --topic=capstone10
+hadoop fs -ls .
+hadoop fs -ls .spark_history 
+hadoop fs -ls .sparkStaging
+hadoop fs -ls /tmp
+hadoop fs -ls /tmp/log-analyzer-streaming
+hadoop fs -cat /tmp/log-analyzer-streaming/*
+sudo mount /dev/xvdk /mnt/kafka/
+ls
+./Start.sh 
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar --class topcarrierinairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+export YARN_CONF_DIR=/usr/local/hadoop/etc/hadoop/
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar,/home/ubuntu/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar --class topcarrierinairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+./Stop.sh 
+su - kafka
+./extract2 On_Time_On_Time_Performance_1988_1.csv | pv -L 10m  | /home/kafka/kafka/bin/kafka-console-producer.sh --broker-list=localhost:9092 --topic=capstone10
+more On_Time_On_Time_Performance_1988_1.csv 
+./extract2 On_Time_On_Time_Performance_1988_1.csv 
+./extract2 On_Time_On_Time_Performance_1988_1.csv | pv -L 10m  | /home/kafka/kafka/bin/kafka-console-producer.sh --broker-list=localhost:9092 --topic=capstone10
+df -h
+sudo mount /dev/xvdg /mnt/data/
+ls
+more kafka.sh 
+./kafka.sh 
+./extract2 On_Time_On_Time_Performance_1988_1.csv | pv -L 10m  | /home/kafka/kafka/bin/kafka-console-producer.sh --broker-list=localhost:9092 --topic=capstone10
+cd spark/
+cd coursera/
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+ls /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.1.jar
+ls /home/ubuntu/spark/libs/
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+ls
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.1.9.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+cd /usr/local/spark
+ls
+./bin/start-all.sh
+./sbin/start-all.sh 
+cd conf/
+ls
+cp slaves.template slaves.template 
+cp slaves.template slaves
+sudo cp slaves.template slaves
+sudo vi slaves
+cd ..
+./sbin/stop-all.sh 
+./sbin/start-all.sh 
+ssh slave01
+cd
+cd spark/
+ls
+rm libs.tar 
+tar cvf libs.tar libs
+ls -al
+scp libs.tar slave01:.
+scp libs.tar slave02:.
+scp libs.tar slave03:.
+ssh slave01
+ssh slave02
+ssh slave03
+cd libs/
+wget http://central.maven.org/maven2/com/datastax/spark/spark-cassandra-connector-java_2.10/1.4.1/spark-cassandra-connector-java_2.10-1.4.1.jar
+ls
+wget http://central.maven.org/maven2/com/datastax/cassandra/cassandra-driver-core/2.1.9/cassandra-driver-core-2.1.9.jar
+ls
+cd spark/libs/
+wget http://central.maven.org/maven2/com/datastax/spark/spark-cassandra-connector_2.10/1.5.0-RC1/spark-cassandra-connector_2.10-1.5.0-RC1.jar
+wget http://central.maven.org/maven2/com/datastax/spark/spark-cassandra-connector-java_2.10/1.5.0-RC1/spark-cassandra-connector-java_2.10-1.5.0-RC1.jar
+ls
+wget http://central.maven.org/maven2/com/datastax/cassandra/cassandra-driver-core/3.0.0/cassandra-driver-core-3.0.0.jar
+wget http://central.maven.org/maven2/com/datastax/cassandra/cassandra-driver-mapping/3.0.0/cassandra-driver-mapping-3.0.0.jar
+ls
+wget http://dl.bintray.com/spark-packages/maven/datastax/spark-cassandra-connector/1.5.0-RC1-s_2.10/spark-cassandra-connector-1.5.0-RC1-s_2.10.jar
+ls -al
+wget http://dl.bintray.com/spark-packages/maven/datastax/spark-cassandra-connector/1.4.2-s_2.10/spark-cassandra-connector-1.4.2-s_2.10.jar
+ls
+wget http://central.maven.org/maven2/com/datastax/spark/spark-cassandra-connector-java_2.10/1.4.2/spark-cassandra-connector-java_2.10-1.4.2.jar
+wget http://central.maven.org/maven2/com/datastax/spark/spark-cassandra-connector-java_2.10/1.5.0-M3/spark-cassandra-connector-java_2.10-1.5.0-M3.jar
+cd spark/
+cd coursera/
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/cassandra-driver-core-2.1.9.jar,/./extract2 On_Time_On_Time_Performance_1988_1.csv | pv -L 10m  | /home/kafka/kafka/bin/kafka-console-producer.sh --broker-list=localhost:9092 --topic=capstone10
+ls
+cd /usr/local/
+ls
+ls -al
+cd
+./extract2 On_Time_On_Time_Performance_1988_1.csv | pv -L 10m  | /home/kafka/kafka/bin/kafka-console-producer.sh --broker-list=localhost:9092 --topic=capstone10
+cqlsh
+./extract2 On_Time_On_Time_Performance_1988_1.csv | pv -L 10m  | /home/kafka/kafka/bin/kafka-console-producer.sh --broker-list=localhost:9092 --topic=capstone10
+cqlsh
+./extract2 On_Time_On_Time_Performance_1988_1.csv | pv -L 10m  | /home/kafka/kafka/bin/kafka-console-producer.sh --broker-list=localhost:9092 --topic=capstone10
+cqlsh
+ls -al
+cd .m2
+l
+ls
+rm -r repository/
+cd
+./extract2 On_Time_On_Time_Performance_1988_1.csv | pv -L 10m  | /home/kafka/kafka/bin/kafka-console-producer.sh --broker-list=localhost:9092 --topic=capstone10
+cqlsh
+./extract2 On_Time_On_Time_Performance_1988_1.csv | pv -L 10m  | /home/kafka/kafka/bin/kafka-console-producer.sh --broker-list=localhost:9092 --topic=capstone10
+./extract2 On_Time_On_Time_Performance_1988_1.csv | pv -L 20m  | /home/kafka/kafka/bin/kafka-console-producer.sh --broker-list=localhost:9092 --topic=capstone10
+cqlsh
+cd spark/
+cd coursera/
+mvn package
+cd spark/coursera/
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class topairportinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class topairportinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class topairportinairport --master spark://ip-172-31-56-183:7077 --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class topairportinairport --master spark://ip-172-31-56-183:7077 --executor-cores 5 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class topairportinairport --master spark://ip-172-31-56-183:7077 --executor-cores 6 --deploy-mode cluster --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class topairportinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class travel --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class travel --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class travel --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class origindestinationdelay --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class origindestinationdelay --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+su - kafka
+/usr/local/spark/sbin/start-all.sh 
+sudo mount /dev/xvdg  /mnt/data
+cqlsh 
+df -h
+cd /tmp
+ls
+cd log-analyzer-streaming/
+ls
+ls -al
+ls -alh
+du -h
+df -h
+cd
+cd spark/coursera/
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassand
+ra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class travel --master local[*
+] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+cd spark/coursera/
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class travel --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class travel --master local[*] --executor-cores 6 --conf "spark.executor.memory=2g" --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class travel --master local[*] --executor-cores 6 --driver-memory 2g --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class travel --master local[*] --executor-cores 6 --driver-memory 4g --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class travel --master local[*] --executor-cores 6 --driver-memory 6g --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class travel --master local[*] --executor-cores 6 --driver-memory 5g --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class travel --master local[*] --executor-cores 6 --driver-memory 5g --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class travel --master local[*] --executor-cores 6 --driver-memory 5g --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class travel --master local[*] --executor-cores 6 --driver-memory 5g --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class topairline --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+hadoop fs -rm /G1-2
+hadoop fs -rm /G1-Q2
+hadoop fs -rm -r -f /G1-Q2
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class topairline --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopcarrierinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topcarrierinairport table1
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopairportinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topairportinairport table1
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopairportinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topairportinairport table1 2> /dev/null
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopcarrierinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topcarrierinairport table1 2> /dev/null 
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readorigindestinationdelay --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  origindestinationdelay table1 2> /dev/null
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopairportinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topairportinairport table1 
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readorigindestinationdelay --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  origindestinationdelay table1 2> /dev/null
+nodetool status
+sudo service cassandra restart 
+nodetool status
+ssh slave01 sudo service cassandra restart 
+ssh slave02 sudo service cassandra restart 
+ssh slave03 sudo service cassandra restart 
+nodetool status
+ssh slave03 sudo service cassandra restart 
+nodetool status
+cd spark/coursera/
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class origindestinationdelay --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class origindestinationdelay --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+export YARN_CONF_DIR=/usr/local/hadoop/etc/hadoop/
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class origindestinationdelay --master yarn-cluster --deploy-mode cluster --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopcarrierinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topcarrierinairport table1
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopcarrierinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topcarrierinairport table1
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopcarrierinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topcarrierinairport table1
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopcarrierinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topcarrierinairport table1
+mvn package
+usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopairportinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topairportinairport table1
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopairportinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topairportinairport table1
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readorigindestinationdelay --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  origindestinationdelay table1
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class travel --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class travel --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class travel --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --driver-memory 2g --class topairline --master spark://ip-172-31-56-183:7077 --executor-cores 6 --deploy-mode cluster --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --driver-memory 2g --class topairline --master spark://ip-172-31-56-183:7077 --executor-cores 6 --deploy-mode cluster --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar master:9092 capstone10
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class topairline --master spark://ip-172-31-56-183:7077 --executor-cores 6 --deploy-mode cluster --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar master:9092 capstone10
+set
+export YARN_CONFIG_DIR
+echo $YARN_CONFIG_DIR
+mvn package
+export YARN_CONF_DIR=/usr/local/hadoop/etc/hadoop/
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class topairline --master spark://ip-172-31-56-183:7077 --executor-cores 6 --deploy-mode cluster --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar master:9092 capstone10
+hadoop fs -rm -r -f /G1-Q2
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class topairline --master spark://ip-172-31-56-183:7077 --executor-cores 6 --deploy-mode cluster --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar master:9092 capstone10
+
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class topairline --master spark://ip-172-31-56-183:7077 --executor-cores 6 --deploy-mode cluster --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar master:9092 capstone10
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class topairline --master spark://ip-172-31-56-183:7077 --executor-cores 6 --deploy-mode cluster --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar master:9092 capstone10
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class topairline --master spark://ip-172-31-56-183:7077 --executor-cores 6 --deploy-mode cluster  ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar master:9092 capstone10
+mvn package
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --driver-memory 2g --class topairline --master yarn --executor-cores 6 --deploy-mode cluster --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+~/Stop.sh
+~/Start.sh
+cd /usr/local/hadoop
+cd logs/
+ls -al
+
+
+tail -f hadoop-ubuntu-namenode-ip-172-31-56-183.log
+cd
+cd spark/coursera/
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopairportinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topairportinairport table1
+nodetool status
+sudo service cassandra restart 
+nodetool status
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopairportinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topairportinairport table1
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopcarrierinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topcarrierinairport table1
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopcarrierinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topcarrierinairport table1 2> /dev/null
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopcarrierinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topcarrierinairport table1
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopcarrierinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topcarrierinairport table1 2> /dev/null
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopcarrierinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topairportinairport table1 2> /dev/null
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopcarrierinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topcarrierinairport table1 2> /dev/null
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopairportinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topairportinairport table1
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readorigindestinationdelay --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  origindestinationdelay table1
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopcarrierinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topcarrierinairport table1 2> /dev/null
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopairportinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topairportinairport table1
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopairportinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topairportinairport table1 2> /dev/null
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readorigindestinationdelay --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  origindestinationdelay table1 2> /dev/null
+su - kafka
+cqlsh
+cqlsh 
+cqlsh
+sudo mount /dev/xvdg  /mnt/data
+./kafka.sh 
+./Start.sh 
+./kafka.sh 
+./extract2 On_Time_On_Time_Performance_1988_1.csv | pv -L 10m  | /home/kafka/kafka/bin/kafka-console-producer.sh --broker-list=localhost:9092 --topic=capstone10
+ls
+cp kafka.sh kafka-2008.sh 
+cp impdata_kafka.sh impdata_kafka-2008.sh 
+ls
+./kafka-2008.sh 
+vi /usr/local/spark/conf/spark-defaults.conf.template 
+sudo cp /usr/local/spark/conf/spark-defaults.conf.template /usr/local/spark/conf/spark-defaults.conf
+sudo vi /usr/local/spark/conf/spark-defaults.conf
+top
+./kafka-2008.sh 
+copy extract2 extract2m
+cp extract2 extract2m
+./kafka-2008.sh 
+./Stop.sh 
+./Start.sh 
+./kafka.sh 
+sudo vi /usr/local/spark/conf/spark-defaults.conf
+./Start.sh 
+./Stop.sh 
+./Start.sh 
+cd /tmp
+ls -al
+cd hadoop-ubuntu/
+ls
+ls -al
+ls /tmp/hadoop-yarn/staging/history/done
+cd ..
+ls -al
+mkdir -p /tmp/hadoop-yarn/staging/history/
+ls -al
+~/Start.sh 
+~/Stop.sh 
+~/Start.sh 
+ls
+cd hadoop-yarn/
+ls
+cd staging/history/
+ls
+ls -al
+cd /tmp
+chmod a+rwx -R hadoop-yarn/
+ls -al
+~/Stop.sh 
+~/Start.sh 
+cd
+/usr/local/spark/sbin/stop-all.sh 
+/usr/local/spark/sbin/start-all.sh
+./kafka.sh 
+/usr/local/spark/sbin/stop-all.sh 
+cqlsh
+du -h
+rm -r .m2
+rm -r .ivy2
+du -h
+rm bckjar/guava-11.0.2.jar 
+du -h
+df -h
+cd /tmp
+mkdir b
+cd b
+tar cvf home.tar /home/ubuntu/
+man tar
+tar cvf --exclude="build" home.tar /home/ubuntu/
+ls -alh
+tar -cvf --exclude="build" home.tar /home/ubuntu/
+ls -al
+rm *
+rm '--exclude=build' 
+rm "--exclude=build"
+ls -al
+rm home.tar 
+man tar
+tar -c -v -f --exclude="build" home.tar /home/ubuntu/
+tar -c -v -f --exclude="*build*" home.tar /home/ubuntu/
+man tar
+tar -c -v -f --exclude=build home.tar /home/ubuntu/
+tar -c -v -f --exclude=*build home.tar /home/ubuntu/
+tar -c -v -f --exclude=*build* home.tar /home/ubuntu/
+ls
+ls -al
+tar -c -v -f --exclude= home.tar /home/ubuntu/
+man tar
+find /home/ubuntu -name "build"
+sudo find /home/ubuntu -name "build"
+ls -al
+cd ..
+rm -rf b
+mkdir b
+cd b
+ls
+tar -cvfj home.tar /home/ubuntu/
+ls -al
+rm j
+ls -al
+tar -cvfj home.tar /home/ubuntu/
+ls
+rm j
+tar -cvf home.tar /home/ubuntu/
+ls -al
+ls -alh
+bzip2 home.tar 
+ls -alh
+sudo tar cvf kafka.tar /home/kafka
+ls -al
+ls -alh
+sudo bzip2 kafka.tar 
+ls -al
+ls -lah
+ls /home
+cd /usr/local/
+ls
+du -h
+cd /tmp
+cd b
+ls
+rm -r *
+sudo rm -r *
+ls -al
+sudo cp /root * .
+sudo cp /root/* .
+sudo cp /root/* 
+ls /root
+sudo ls /root
+sudo cp /root/* .
+ls -al
+sudo cp /root/ha* .
+sudo cp /root/* .
+cd /root
+ks
+sudo sh
+cp /etc/cassandra/* .
+tar cassandra.tar /etc/
+tar cvf etc.tar /etc/
+sudo tar cvf etc.tar /etc/
+ls -al
+cd ..
+tar cvf b.tar b
+bzip2 b.tar 
+cp b.tar.bz2 b
+ls
+cd /home
+cd kafka/
+ls
+ls -al
+cd /usr/
+ls
+cd /etc/cassandra/
+ls
+cqlsh
+ls
+cd /usr/local/
+ls
+ls -a
+ls -al
+cd /usr/local/hadoop
+ls
+cd etc/hadoop/
+ls
+more hadoop-env.
+more hadoop-env.sh 
+ls
+more hdfs-site.xml 
+more core-site.xml 
+ls -al
+more hadoop-env.sh 
+more core-site.xml 
+ls -al
+more hdfs-site.xml 
+more masters 
+more slaves 
+ls -al
+more mapred-site.xml
+ls
+more yarn-env.sh 
+more mapred-env.sh 
+ls
+more capacity-scheduler.xml 
+more yarn-site.xml 
+cd ..
+ls
+cd spark
+ls
+cd conf/
+ls
+more spark-env.sh
+ls
+mroe slaves
+more slaves
+cd /etc/
+ls
+cd cassandra/
+ls
+more cassandra.yaml
+cat cassandra.yaml
+ls
+cat cassandra-env.sh
+ls
+cat cassandra-topology.yaml 
+cat logback.xml 
+ls
+cat cassandra-topology.properties 
+sudo sh
+curl http://169.254.169.254/
+curl http://169.254.169.254/1.0
+curl http://169.254.169.254/1.0/ubuntu/
+curl http://169.254.169.254/1.0/
+curl http://169.254.169.254/1.0/meta-data
+curl http://169.254.169.254/1.0/meta-data/
+curl http://169.254.169.254/1.0/meta-data/hostname
+curl http://169.254.169.254/1.0/meta-data/hostname/
+curl http://169.254.169.254/1.0/meta-data/ami-id
+curl http://169.254.169.254/1.0/meta-data/ami-id/
+curl http://169.254.169.254/1.0/meta-data/public-keys/
+curl http://169.254.169.254/1.0/meta-data/instance-id/
+curl http://169.254.169.254/1.0/meta-data/instance-id/i-1f133b9e
+curl http://169.254.169.254/1.0/meta-data/instance-id/i-1f133b9e/
+curl http://169.254.169.254/1.0/meta-data/instance-id/i-1f133b9e/i-1f133b9e/
+curl http://169.254.169.254/1.0/meta-data/instance-id
+ls
+more kafka-2008.sh 
+./kafka-2008.sh 
+iptables -L
+sudo iptables -L
+more Start.sh
+./Start.sh 
+ls
+StartCassandra.sh
+./StartCassandra.sh
+sudo ./StartCassandra.sh
+ls -al
+more StartCassandra.sh
+nodetool info
+nodetool status
+cqlsh
+cd /usr/local/
+ls
+cd ./sbin/
+ls
+cd ..
+ls
+cd spark
+ls
+cd ./sbin/
+ls
+cd ..
+./sbin/start-master.sh 
+cd
+nodetool status
+ls
+cd /mnt/data
+ls
+cd ..
+impdata_kafka-2008.sh
+./impdata_kafka-2008.sh
+ls
+cd
+./impdata_kafka-2008.sh
+kafka-2008.sh
+./kafka-2008.sh
+ls
+grep "spark" .bash_history 
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+grep "kafka" .bash_history 
+grep "kafka" .bash_history  | grep 'topic'
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10 2> /dev/null
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --jars /home/ubuntu/spark/libs/spark-cassandra-connector_2.10-1.4.1.jar,/home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.1.jar,/home/ubuntu/spark/libs/cassandra-driver-core-2.0.10.jar,/home/ubuntu/spark/libs/guava-18.0.jar --class topcarrierinairport --master local[2] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone10
+./Start.sh 
+ls
+cd spark/
+ls
+cd 
+more .bash_history 
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 2
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+cd spark/
+ls
+mvn package
+ls
+cd coursera/
+
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+cd
+more .bash_history | grep "spark"
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopairportinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topairportinairport table1
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0 --class topairport --master local[2] ~/spark/group1-question1/target/group1-question1-0.0.1-SNAPSHOT.jar  master:9092 capstone
+/usr/local/spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.0,com.google.guava:guava:16.0.1,com.datastax.cassandra:cassandra-driver-core:2.1.9,datastax:spark-cassandra-connector:1.4.2-s_2.10 --jars /home/ubuntu/spark/libs/spark-cassandra-connector-java_2.10-1.4.2.jar --class readtopairportinairport --master local[*] --executor-cores 6 --supervise ~/spark/coursera/target/group1-question1-0.0.1-SNAPSHOT.jar  topairportinairport table1
+cd spark/
+ls
+cd coursera/
+ls
+cd ..
+ls
+cd coursera/
+ls
+cd src/
+ls
+cd main/
+ls
+cd java/
+ls
+more  topairline.java 
+vim  topairline.java 
+cd
+./kafka-2008.sh 
+ls
+kafka.sh
+./kafka.sh
+sudo mount /dev/xvdg /mnt/data
+sudo mount /dev/xvdk /mnt/kafka
+su - kafka

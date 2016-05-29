@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+import csv
+import sys
+csv.field_size_limit(1000000000)
+good_lines = 0
+all_lines = 0
+with open(sys.argv[1]) as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+    	all_lines+=1
+        #"Year","Quarter","Month","DayofMonth","DayOfWeek","FlightDate","UniqueCarrier","AirlineID","Carrier","TailNum","FlightNum",
+        #"OriginAirportID","OriginAirportSeqID","OriginCityMarketID","Origin","OriginCityName","OriginState","OriginStateFips","OriginStateName","OriginWac",
+        #"DestAirportID","DestAirportSeqID","DestCityMarketID","Dest","DestCityName","DestState","DestStateFips","DestStateName","DestWac",
+        #"CRSDepTime","DepTime","DepDelay","DepDelayMinutes","DepDel15","DepartureDelayGroups","DepTimeBlk","TaxiOut","WheelsOff",
+        #"WheelsOn","TaxiIn","CRSArrTime","ArrTime","ArrDelay","ArrDelayMinutes","ArrDel15","ArrivalDelayGroups","ArrTimeBlk",
+        #"Cancelled","CancellationCode","Diverted","CRSElapsedTime","ActualElapsedTime","AirTime","Flights","Distance","DistanceGroup","CarrierDelay","WeatherDelay","NASDelay","SecurityDelay",
+        #"LateAircraftDelay","FirstDepTime","TotalAddGTime","LongestAddGTime",
+        #"DivAirportLandings","DivReachedDest","DivActualElapsedTime","DivArrDelay","DivDistance","Div1Airport","Div1AirportID","Div1AirportSe
+       
+        # removed Cancel and Diverted Fly    
+        if row['Cancelled'] == "0.00" and row['Diverted'] == "0.00":
+            print "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s" % (row['DayOfWeek'],row['FlightDate'],row['UniqueCarrier'],row['FlightNum'],row['Origin'],row['Dest'],row['DepTime'],row['DepDelay'],row['DepDelayMinutes'],row['DepDel15'],row['ArrTime'],row['ArrDelay'],row['ArrDelayMinutes'],row['ArrDel15'])
+            good_lines+=1
+            #print row['FlightDate'],",",row['DayOfWeek'],",",row['FlightNum'],",",row['UniqueCarrier'],",",row['DepTime'],",",row['ArrTime'],",",row['Origin'],",",row['Dest'],",",row['DepDelay'],",",row['ArrDelay'],",",row['DepDelayMinutes'],",",row['ArrDelayMinutes']
+            #output:
+            #FlightDate,DayOfWeek,UniqueCarrier,FlightNum,Origin,Dest,DepTime	DepDelay	DepDelayMinutes	DepDel15 ArrTime	ArrDelay	ArrDelayMinutes	ArrDel15
+
+			#     0          1        2             3        4     5       6        7             8            9       10          11         12             13
+
+
+
+sys.stderr.write("good lines %d for %d lines\n" % (good_lines,all_lines))

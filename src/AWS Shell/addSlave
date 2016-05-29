@@ -1,0 +1,15 @@
+#!/bin/sh
+
+hostname=$2
+hostip=$1
+
+
+grep "$hostname" /etc/hosts
+
+if [ $? -eq 0 ] ; then
+	sed -i "s/.*$hostname//" /etc/hosts
+fi
+
+
+echo $hostip $hostname >>  /etc/hosts
+
