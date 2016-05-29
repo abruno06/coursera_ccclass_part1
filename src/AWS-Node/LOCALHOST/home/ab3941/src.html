@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<!--[if IE 9]>      <html class="no-js ie ie9" lang="fr"> <![endif]-->
+<!--[if IE 10]>     <html class="no-js ie ie10" lang="fr"> <![endif]-->
+<!--[if gt IE 10]>  <html class="no-js ie gte-ie11" lang="fr"><![endif]-->
+<!--[if !IE]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+<head>
+
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8">
+<title>e-Carte Bleue</title>
+<link rel="apple-touch-icon" sizes="57x57" href="/fr/sg/skins/icons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/fr/sg/skins/icons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/fr/sg/skins/icons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/fr/sg/skins/icons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/fr/sg/skins/icons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/fr/sg/skins/icons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/fr/sg/skins/icons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/fr/sg/skins/icons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/fr/sg/skins/icons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/fr/sg/skins/icons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/fr/sg/skins/icons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/fr/sg/skins/icons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/fr/sg/skins/icons/favicon-16x16.png" sizes="16x16">
+<link rel="mask-icon" href="/fr/sg/skins/icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/fr/sg/skins/icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/fr/sg/skins/icons/mstile-144x144.png">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="/fr/sg/skins/skin-sg-visa/css/skin.css">
+
+<link rel="stylesheet" href="/fr/sg/skins/skin-sg-visa/css/jquery.contextmenu.css">
+<script>
+    // Fix Windows Phone
+    	if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile/)) {
+			var msViewportStyle = document.createElement("style");
+			msViewportStyle.appendChild(
+				document.createTextNode("@-ms-viewport{width:auto!important}")
+			);
+			document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+		}    
+    
+</script>
+<script
+	src="/fr/sg/skins/skin-sg-visa/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<script src="/fr/sg/skins/skin-sg-visa/js/vendor/jquery-1.11.2.min.js"></script>
+
+
+<script type="text/javascript">
+    // initialiser le curseur 
+	function initCursor() {
+		if ($("#user-id").val() != "") {
+			$("#user-password").focus()
+		} else {
+			$("#user-id").focus()
+		}
+	}
+	$(document).ready(function() {
+
+		// initialisÃ© le curseur
+		initCursor();
+		// vider le champ cachÃ© identifiantCrypteId
+		$("#user-id").change(function() {
+			$("#identifiantCrypteId").val("");
+		});
+		
+	});
+	$(document).keypress(function(e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 13) {
+			submitPasswordEdit();
+		}
+	});
+	
+</script>
+</head>
+<body
+	class="thin-app authenticate-screen">
+	<div id="wrapper">
+		<div id="wrapper-inner">
+			<div id="content-layer">
+				<article class="container-fluid">
+					<div id="content" class="row">
+						
+						
+
+
+
+
+<!-- Construction des urls -->
+
+
+
+
+	
+	
+		
+	
+
+
+<script>
+    function gotoHistoric(){
+    	$('body').addClass('loading-historic');
+    	// reset background-image for IE / Firefox issue
+    	$('.loading-sign').each(function(){
+			var bi = $(this).css('background-image');
+			$(this).css('background-image', bi);
+		});
+    	
+    	setTimeout(function(){
+	    	$('#historic-form').submit();
+    	}, 1000);
+    	
+    }
+    function switchLoadingView(){
+    	$('body').addClass('loading');
+    	// reset background-image for IE / Firefox issue
+    	$('.loading-sign').each(function(){
+			var bi = $(this).css('background-image');
+			$(this).css('background-image', bi);
+		});
+    } 
+    function submitPasswordEdit() {
+    	$('#user-id-h').val($('#user-id').val()); 
+		$('#user-password-h').val($('#user-password').val()); 		
+		$('#user-memorise').prop('checked') ? $('#user-memorise-h').val('true') : $('#user-memorise-h').val('false');
+		switchLoadingView();
+		setTimeout(function(){
+			$("#form-password-edit").submit();
+    	}, 1000);
+	}
+    function submitCodeGenerator() {
+		switchLoadingView();
+		setTimeout(function(){
+			$("#form-code-generator").submit();
+    	}, 1000);
+	}
+    function submitOtpAuth() {
+		switchLoadingView();
+		setTimeout(function(){
+			$("#form-otp-authenticate").submit();
+    	}, 1000);
+	}
+    function submitDeleteeNum() {
+		switchLoadingView();
+		setTimeout(function(){
+			$("#form-error-confirmation").submit();
+    	}, 1000);
+	}
+	var helpUrl = "https://particuliers.societegenerale.fr/essentiel_quotidien/cartes/ecarte_bleue/faq.html";
+</script>
+<header id="header">
+	<div class="col-xs-12">
+		<div id="header-upper-brand-space">
+			<img id="header-upper-brand-space-EPB"
+				src="/fr/sg/skins/skin-sg-visa/images/logo-banque.png"
+				alt="logo banque" />
+		</div>
+		<nav>
+			<button id="header-help-btn" title="afficher l'aide login (nouvelle fenêtre)" type="button"
+				onclick="window.open('https://particuliers.societegenerale.fr/essentiel_quotidien/cartes/ecarte_bleue/faq.html','_blank','height=768,width=1024,scrollbars=yes,resizable=yes,status=yes,toolbar=no,menubar=no,location=no'); return false;">
+				<span class="sr-only">afficher l'aide login (nouvelle fenêtre)</span>
+			</button>
+			<button id="header-disconnect-btn"
+				title="se déconnecter"
+				type="button" onclick="location.href='/fr/sg/logout'">
+				Déconnexion
+			</button>
+			<ul id="header-tab-menu" class="">
+				<li><a href="/fr/sg/payer"
+					title="afficher la page payer"
+					class="tab-link "><span>payer</span></a></li>
+				<li><a href="#"
+					onclick="javascript:gotoHistoric();return false;"
+					title="afficher la page historique"
+					class="tab-link "><span>historique</span></a></li>
+				<li class="dropdown"><a id="header-drop-options" href="#"
+					title="afficher les options"
+					class="tab-link "
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>options<span class="caret"></span></span></a>
+					<ul class="dropdown-menu" aria-labelledby="header-drop-options">
+						<li><a href="/fr/sg/preparestrongauth?actionType=changepass"
+							title="afficher la page de changement de mot de passe">Changer le mot de passe</a></li>
+						<li id="address-change-option"><a href="/fr/sg/payer#address-change"
+							title="afficher le bloc de modification d'adresse"
+							class="edit-toggle-href">Changer mes adresses</a></li>
+
+						<!-- Liens additionnels -->
+						
+					</ul></li>
+			</ul>
+		</nav>
+		<form id="historic-form" action="/fr/sg/historic" method="post" autocomplete="off" style="display:none">
+			<input name="token" type="hidden" value="303613802312463836"/>
+		</form>
+		<div id="header-lower-brand-space">
+			<img id="header-lower-brand-space-EPB"
+				src="/fr/sg/skins/skin-sg-visa/images/logo-banque.png"
+				alt="logo banque" /> <img
+				id="header-lower-brand-space-EPV"
+				src="/fr/sg/skins/skin-sg-visa/images/logo-carte.png"
+				alt="carte visa" />
+			<h1 id="header-title">Connexion</h1>
+		</div>
+	</div>
+</header>
+						<div id="no-loading-content" class="col-xs-12">
+							
+
+
+<div class="fake-form">
+	<div class="form-group">
+		<label for="user-id">Identifiant :</label> <input name="login" type="text"
+			class="form-control" id="user-id" autocomplete="off"
+			value="" />
+		<div class="checkbox">
+			<label><input type="checkbox" name="memorise"
+				id="user-memorise"
+				 /> Mémoriser mon identifiant</label>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="user-password">Mot de passe :</label> <input name="motdepasse"
+			type="password" class="form-control" id="user-password"
+			autocomplete="off" />
+	</div>
+</div>
+<form id="form-password-edit" action="/fr/sg/login" method="post" autocomplete="off">
+	<input id="requestId" name="request" type="hidden" value="login"/>
+	<input id="identifiantCrypteId" name="identifiantCrypte" type="hidden" value=""/>
+	<input id="appId" name="app" type="hidden" value=""/>
+	<input id="user-id-h" name="identifiant" type="hidden" value=""/>
+	<input id="user-memorise-h" name="memorise" type="hidden" value="false"/>
+	<input id="user-password-h" name="password" type="hidden" value=""/>
+
+	<input id="token" name="token" type="hidden" value="303613802312463836"/>
+	<div class="btn-holder centered">
+		
+		<button type="submit" class="btn-text"
+			onclick="javascript:submitPasswordEdit();return false;">
+			Valider
+		</button>
+	</div>
+
+</form>
+						</div>
+						
+						
+						
+<div id="loading-content" class="col-xs-12">
+	<figure class="loading-sign">
+		<figcaption>
+			<span class="sr-only">chargement en cours</span>
+		</figcaption>
+	</figure>
+	<div><p>Veuillez patienter,</p><p>connexion sécurisée en cours.</div>
+</div>
+<div id="loading-historic-content" class="col-xs-12">
+	<figure class="loading-sign">
+		<figcaption>
+			<span class="sr-only">chargement en cours</span>
+		</figcaption>
+	</figure>
+	<div><p>Veuillez patienter,</p><p>chargement de l'historique en cours...</p></div>
+</div>
+						<footer>
+	<script src="/fr/sg/skins/skin-sg-visa/js/vendor/jquery-js-cookie.js"></script>
+	<script src="/fr/sg/skins/skin-sg-visa/js/vendor/bootstrap.min.js"></script>
+	<script src="/fr/sg/skins/skin-sg-visa/js/vendor/underscore.1.8.3.min.js"></script>
+	<script src="/fr/sg/skins/skin-sg-visa/js/vendor/effects.js"></script>
+	<script src="/fr/sg/skins/skin-sg-visa/js/vendor/jquery.contextmenu.js"></script>
+	<script src="/fr/sg/skins/skin-sg-visa/js/main.js"></script>
+	<!--[if IE 9]>
+		<script src="/fr/sg/skins/skin-sg-visa/js/vendor/jquery.placeholder.min.js"></script>
+		<script>$('input, textarea').placeholder();</script>
+	<![endif]-->
+</footer>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+	<div id="overlay-layer" style="display: none;">OVER</div>
+</body>
+</html>
